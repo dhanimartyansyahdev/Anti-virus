@@ -1,5 +1,7 @@
 package com.example.model
 
+import java.util.Locale
+
 enum class ScanCategory(val displayName: String, val indonesianName: String) {
     RESULT("Result", "Hasil"),
     MUSIC("Music", "Musik"),
@@ -36,8 +38,8 @@ data class MalwareThreat(
 ) {
     val formattedSize: String
         get() = when {
-            sizeBytes >= 1024 * 1024 -> String.format("%.1f MB", sizeBytes / (1024.0 * 1024.0))
-            else -> String.format("%d KB", sizeBytes / 1024)
+            sizeBytes >= 1024 * 1024 -> String.format(Locale.US, "%.1f MB", sizeBytes / (1024.0 * 1024.0))
+            else -> String.format(Locale.US, "%d KB", sizeBytes / 1024)
         }
 }
 
