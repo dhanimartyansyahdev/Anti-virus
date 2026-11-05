@@ -1,0 +1,6 @@
+{
+  "name": "Malware Removal",
+  "description": "Aplikasi pemindaian dan pembersihan malware canggih dengan visualisasi folder bertingkat dan antarmuka futuristik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
